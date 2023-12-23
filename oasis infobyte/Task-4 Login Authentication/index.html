@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login System</title>
+</head>
+<body>
+    <div id="app">
+        <div id="login-form" class="form">
+            <h2>Login</h2>
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" placeholder="Enter your username">
+            <br><br>
+            <label for="login-username">Email:</label>
+            <input type="text" id="login-Email" placeholder="Enter your Email">
+            <br><br>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" placeholder="Enter your password">
+            <br><br>
+            <label for="login-password">Password Again:</label>
+            <input type="password" id="login-password again" placeholder="Enter your password again">
+            <br><br>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="register-form" class="form">
+            <h2>Register</h2>
+            <label for="register-username">Username:</label>
+            <input type="text" id="register-username" placeholder="Choose a username">
+            <label for="register-password">Password:</label>
+            <input type="password" id="register-password" placeholder="Choose a password">
+            <button onclick="register()">Register</button>
+        </div>
+
+        <div id="secured-page" class="hidden">
+            <h2>Secured Page</h2>
+            <p>Welcome! You have successfully logged in.</p>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

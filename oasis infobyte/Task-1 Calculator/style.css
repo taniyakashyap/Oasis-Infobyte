@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    width: 500px;
+    border: 2px solid blueviolet;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.display {
+    font-size: 2em;
+    padding: 10px;
+    background-color: aqua;
+    text-align: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    font-size: 2em;
+    padding: 15px;
+    border: lightblue;
+    background-color:rgb(124, 206, 233);
+    box-sizing: content-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+
+button:active {
+    background-color:darkcyan;
+}
